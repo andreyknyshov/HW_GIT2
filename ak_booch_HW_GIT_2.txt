@@ -3,15 +3,37 @@ GitHub. HW_2
 - Postman
 - Jmeter
 - CheckLists
-- Bag Reports
+- Bug Reports
 - SQL
 - Charles
 - Mobile testing
 
+$ git init
+# Initialized empty Git repository in D:/HW/HW_GIT2/.git/
+$ git add ak_booch_HW_GIT_2.txt
+$ git commit ak_booch_HW_GIT_2.txt -m "adding file"
+# [master (root-commit) 7159ed0] adding file
+# 1 file changed, 19 insertions(+)
+# create mode 100644 ak_booch_HW_GIT_2.txt
+$ git branch BranchName
+# создание ветки BranchName
+
 2. Запушить все ветки на внешний репозиторий
+$ git remote add origin https://github.com/andreyknyshov/HW_GIT2.git
+$ git push origin BranchName
+
 3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+$ git checkout BugReports
+# Switched to branch 'BugReports'
+
 4. Запушить структуру багрепорта на внешний репозиторий
+$ git add .
+$ git commit -m "add bugreport.txt"
+$ git push -u origin BugReports
+
 5. Вмержить ветку Bag Reports в Main
+$ git merge bugreports
+
 6. Запушить main на внешний репозиторий.
 7. В ветке CheckLists набросать структуру чек листа.
 8. Запушить структуру на внешний репозиторий
